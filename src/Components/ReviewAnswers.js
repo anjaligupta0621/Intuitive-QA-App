@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Assets/Styling.css';
-import assessment from '../Assets/assessment.png';
+import review from '../Assets/review.png';
 
 const reviewAnswers = (props) => {
 
@@ -17,7 +17,7 @@ const reviewAnswers = (props) => {
 
     return (
         <div>
-            <img src={assessment} alt="Review Logo" style={{width: "45px", height:"45px"}} />
+            <img src={review} alt="Review Logo" style={{width: "100px", height:"75px", margin:"20px", marginBottom:"10px"}} />
             <h4>Review the answers that you have marked: </h4>
             {answersReview()}
         </div>

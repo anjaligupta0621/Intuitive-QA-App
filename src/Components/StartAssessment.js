@@ -56,7 +56,7 @@ class StartAssessment extends Component {
         const keys_Submitted = Object.keys(this.state.submittedData);
         keys_Submitted.map((index) => {
             const answerAttempted = this.state.submittedData[index];
-            const correctAnswer = this.props.questions[+index].answer;
+            const correctAnswer = this.props.questions[+index].correctAnswer;
 
             if (answerAttempted === correctAnswer) {
                 score = score + 1;

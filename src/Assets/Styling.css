@@ -99,3 +99,17 @@
     font-weight: bold;
     box-shadow: 2px solid gray;
 }
+
+.reviewContainer {
+    border: 2px solid black;
+}
+
+.passed {
+    color: green;
+    font-weight: bold;
+}
+
+.failed {
+    color: red;
+    font-weight: bold;
+}

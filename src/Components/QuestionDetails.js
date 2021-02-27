@@ -18,7 +18,7 @@ const questionDetails = (props) => {
                         value={option.value}
                         checked={props.selectedAnswer === option.value}
                         onChange={() => valueChangeHandler(option.value)} />
-                    {option.displayText}
+                    {option.label}
                     </p>
                 </label>
                 
