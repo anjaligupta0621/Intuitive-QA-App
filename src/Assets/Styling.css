@@ -36,7 +36,7 @@
     box-shadow: 1px 1px 1px gray;
     padding: 16px;
     left: 15%;
-    top: 30%;
+    top: 20%;
     box-sizing: border-box;
 }
 
@@ -75,4 +75,27 @@
 
 .headerText {
     flex-basis: 70%;
+}
+
+.closeBtn {
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 110px;
+}
+
+.buttonStyle:hover,
+.closeBtn:hover {
+    background-color: rgb(231, 56, 56);
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px solid gray;
+}
+
+.submitBtn:hover,
+.instructionButton:hover {
+    background-color: rgb(49, 126, 49);
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px solid gray;
 }

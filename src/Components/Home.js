@@ -25,16 +25,11 @@ class Home extends Component {
     }
 
     showInstructionsHandler = () => {
-        return (
-            <Instructions>
-                <div style={{color:"black"}}>
-                    1. Click on Start Assessment to start with your assessment.
-                    2. Answer each question, then only you will be able to submit the test.
-                    3. You will see the score in the end.
-                </div>
-                <button style={{color:"white",backgroundColor:"red"}}>Close</button>
-            </Instructions>
-        )
+        this.setState({currentPage: 'Instructions'});
+    }
+
+    closeInstructionHandler = () => {
+        this.setState({currentPage: 'Welcome'});
     }
 
     showWelcomePage = () => {
@@ -62,12 +57,18 @@ class Home extends Component {
         return <SubmitAssessment numberOfQuestions={this.state.questions.length} score={this.state.score} />
     }
 
+    showInstructionsPage = () => {
+        return <Instructions clicked={this.closeInstructionHandler} />
+    }
+
     render() {
         switch (this.state.currentPage) {
             case 'SubmitAssessment':
                 return this.showSubmitPage();
             case 'StartAssessment':
                 return this.showAssessmentPage();
+            case 'Instructions':
+                return this.showInstructionsPage();
             default:
                 return this.showWelcomePage();
         }
