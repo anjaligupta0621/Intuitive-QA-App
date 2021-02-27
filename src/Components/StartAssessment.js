@@ -33,13 +33,13 @@ class StartAssessment extends Component {
     navigationHeader = () => {
         return (
             //instructions to be added
-            <div>
+            <div className="questionHeader">
                 <div>
                     {this.state.currentQuestion ? (
                         <img className="logo-btn" src={backward} alt="Previous" onClick={this.previousQuestionHandler} />)
                     : null}
                 </div>
-                <h6>Attempt Questions Here</h6>
+                <h6 className="headerText">Attempt Questions Here</h6>
                 <div>
                     {this.state.currentQuestion < this.props.questions.length - 1 ? (
                             <img className="logo-btn" src={forward} alt="Next" onClick={this.nextQuestionHandler}/>
@@ -74,13 +74,14 @@ class StartAssessment extends Component {
         const questionsAttempted = Object.keys(this.state.submittedData).length;
         return questionsAttempted === this.props.questions.length ? (
             <button 
-                onClick={this.onSubmitHandler}>Submit</button>
+                onClick={this.onSubmitHandler}
+                className="submitBtn">Submit</button>
         ) : null;
     }
 
     render() {
         return (
-            <div>
+            <div className="assessmentArea">
                 <div className="reviewContainer">
                     <ReviewAnswers submittedData={this.state.submittedData} />
                 </div>

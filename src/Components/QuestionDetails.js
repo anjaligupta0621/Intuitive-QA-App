@@ -12,12 +12,14 @@ const questionDetails = (props) => {
         return question.options.map((option) => {
             return (
                 <label>
+                    <p>
                     <input
                         type="radio"
                         value={option.value}
                         checked={props.selectedAnswer === option.value}
                         onChange={() => valueChangeHandler(option.value)} />
                     {option.displayText}
+                    </p>
                 </label>
                 
             );

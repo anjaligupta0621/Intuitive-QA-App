@@ -18,6 +18,7 @@
 .logo-btn {
     width: 30px;
     height: 30px;
+    margin: 20px;
 }
 
 .questionText {
@@ -45,4 +46,33 @@
     width: 80%;
     padding: 10px;
     margin-top: 10px;
+}
+
+.assessmentArea {
+    display: flex;
+    margin: 100px;
+}
+
+.questionContainer {
+    border: 2px solid black;
+    flex-basis: 70%;
+    margin-left: 50px;
+}
+
+.submitBtn {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+.questionHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.headerText {
+    flex-basis: 70%;
 }

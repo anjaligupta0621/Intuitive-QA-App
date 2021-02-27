@@ -1,67 +1,67 @@
 const questions = [
     {
-      questionText: "A line which cuts a pair of parallel lines is called",
-      answer: 'Traversal',
+      questionText: "What is the name of the Jewish New Year?",
+      answer: 'Rosh Hashanah',
       options: [
         {
-          value: "Tangent",
-          displayText: "Tangent",
+          value: "Elul",
+          displayText: "Elul",
         },
         {
-          value: "Chord",
-          displayText: "Chord",
+          value: "New Year",
+          displayText: "New Year",
         },
         {
-          value: "Traversal",
-          displayText: "Traversal",
+          value: "Rosh Hashanah",
+          displayText: "Rosh Hashanah",
         },
         {
-          value: "Intersector",
-          displayText: "Intersector",
+          value: "Succoss",
+          displayText: "Succoss",
         },
       ],
     },
     {
-      questionText: "If a certain sum of money can become 5 times of its principal in 10 years, then the rate of interest is",
-      answer: '40%',
+      questionText: "Which team won the 2015-16 English Premier League?",
+      answer: 'Leicester City',
       options: [
         {
-          value: "20%",
-          displayText: "20%",
+          value: "Liverpool",
+          displayText: "Liverpool",
         },
         {
-          value: "30%",
-          displayText: "30%",
+          value: "Chelsea",
+          displayText: "Chelsea",
         },
         {
-          value: "40%",
-          displayText: "40%",
+          value: "Leicester City",
+          displayText: "Leicester City",
         },
         {
-          value: "50%",
-          displayText: "50%",
+          value: "Manchester United",
+          displayText: "Manchester United",
         },
       ],
     },
     {
-      questionText: "A shopkeeper purchases 15 mangoes for Rs. 10 and sells them at 10 mangoes for Rs. 15. Thus, he earns a profit of",
-      answer: '125%',
+      questionText: "What do the letters of the fast food chain KFC stand for?",
+      answer: 'Kentucky Fried Chicken',
       options: [
         {
-          value: "50%",
-          displayText: "50%",
+          value: "Kentucky Fresh Cheese",
+          displayText: "Kentucky Fresh Cheese",
         },
         {
-          value: "75%",
-          displayText: "75%",
+          value: "Kibbled Freaky Cow",
+          displayText: "Kibbled Freaky Cow",
         },
         {
-          value: "80%",
-          displayText: "80%",
+          value: "Kiwi Food Cut",
+          displayText: "Kiwi Food Cut",
         },
         {
-          value: "125%",
-          displayText: "125%",
+          value: "Kentucky Fried Chicken",
+          displayText: "Kentucky Fried Chicken",
         },
       ],
     },
